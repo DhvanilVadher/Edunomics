@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    >
+
+    <TextView
+        android:id="@+id/Presty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:text="Signup"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#4CAF50"
+        android:textSize="50dp" />
+
+    <View android:layout_width="fill_parent" android:id="@+id/focus_view" android:layout_height="0dp" android:focusable="true" android:focusableInTouchMode="true"><requestFocus/></View>
+
+    <LinearLayout
+        android:layout_marginTop ="@android:dimen/app_icon_size"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/user" />
+
+            <EditText
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:id="@+id/emailid"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="EmailId"
+                android:textSize="@dimen/fab_margin"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/password" />
+            <EditText
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:id="@+id/pwd"
+                android:textSize="15dp"
+                android:hint="Password"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textPassword"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@android:dimen/app_icon_size"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:background="#4CAF50"
+                    android:textStyle="bold"
+                    android:text="Submit"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#FFF"
+                    android:onClick="SignIn2"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

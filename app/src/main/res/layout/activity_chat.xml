@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <TextView
+        android:textColor="#FFF"
+        android:fontFamily="@font/montserrat"
+        android:textSize="30dp"
+        android:text="asda"
+        android:id="@+id/CurrCourse"
+        android:background="#00B0FF"
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/app_icon_size">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycerMsg"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/msg"
+            android:textSize="25dp"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:textColor="#4a4a4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+        <Button
+            android:background="@drawable/send"
+            android:onClick="send"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
